@@ -138,9 +138,137 @@ section {
 .skills-box
 { 
 width: 80%;
-height: 600px;
+height: 440px;
 margin-left: 10%;
 margin-right: 10%;
 background-color: #f5f5f5; 
 border-radius: 20px;       
 }
+.tech-skills
+{ 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px; 
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3,1fr);
+    height: 100%; 
+}
+.skill{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.skill svg
+{ 
+    width: 50px; 
+    height: 50px; 
+
+}
+.skill p { 
+    margin-top: 10px;
+    font-size: 16px; 
+
+}
+
+.Sjavascript 
+{ 
+    fill:#F7DF1E ;
+}
+.Shtml
+ { 
+    fill:#E34F26 ;
+ }
+.Scss
+{ 
+    fill:#663399 ;
+}
+.Stailwind
+{ 
+    fill:#06B6D4 ;
+}
+.Sreact
+{
+    fill:#61DAFB ;
+
+}
+.Snodejs
+{ 
+    fill:#5FA04E ;
+
+}
+.Stypescript
+{ 
+    fill:#3178C6 ;
+
+}
+.Snextjs
+{ 
+  
+
+}
+.Sdotnet
+{ 
+    fill:#512BD4 ;
+
+}
+.Sgit
+{ 
+    fill:#F05032 ;
+
+}
+.Sexpress
+{
+    
+}
+.Spsql
+{ 
+    fill:#4169E1 ;
+
+}
+#languages {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    height: 100px;
+  }
+  
+  #languages h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .language-list li {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .language-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .lang {
+    font-weight: bold;
+    color: #2a2a2a;
+  }
+  
+  .level {
+    font-size: 0.9rem;
+    color: #666;
+  }
