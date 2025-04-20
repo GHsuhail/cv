@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+body 
+{ 
+font-family: "Poppins", sans-serif;
+} 
+
+html { 
+    scroll-behavior: smooth;
+}
+
+/* */
+a, .btn 
+{ 
+    transition: all 2500ms ease;
+}
+a { 
+    color : black; 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover 
+{ 
+    color : grey; 
+    text-decoration: underline;
+   text-underline-offset: 1rem;
+}
+.Logo
+{ 
+    font-family: "Orbitron", sans-serif; 
+    font-size: 2rem;
+    padding-left : 80px;
+}
+.Logo:hover
+{ 
+    cursor : default; 
+}
+/* navigation for computer */
+
+nav, .navigation-links
+ { 
+    display : flex;
+
+} 
+nav 
+{ 
+    
+   justify-content: space-around; 
+    align-items: center;
+    height: 10vh;
+   
+}
+.navigation-links
+{ 
+    list-style: none;
+    gap: 2rem; 
+    font-size: 1.5rem;
+}
+button.mode {
+    background: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border: 2px solid #333;
+    border-radius: 12px;  
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.mode img {
+    width: 30px; 
+    height: 30px;  
+}
+
+button.mode:hover {
+    opacity: 0.8; 
+}
+
+.mode 
+{ 
+    margin-left: 80px; 
+}
+section
+{ 
+    padding : 4vh; 
+
+}
+.title-name  { 
+    color: #512BD4;
+    font-family: "Orbitron", sans-serif ;
+}
+
+section {
+    padding-top: 20vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+.profile-image
+{ 
+    width: 300px;
+    height: 300px; 
+}
+#Profile {
+    display: flex;
+     align-items: center;  
+    /* justify-content: center;  */
+    gap: 90px; 
+    padding: 50px;
+  }
+  
+  .profile-image-container img {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+  }
+  
+  .text-container {
+    max-width: 500px;
+  }
+  
