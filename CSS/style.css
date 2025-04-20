@@ -358,10 +358,31 @@ border-radius: 20px;
  }
 
 
-.dev-info
-{  
-   
-    height: 50px;
-    width: 100%; 
+
+.dev-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Vertically align the content */
+    padding:  10px 20px;
     background-color: #f5f5f5;
-}
+    text-align: center;
+  }
+  
+  .dev-card {
+    display: flex;
+    align-items: center;      /* Ensure the text is vertically centered */
+    gap: 10px;                /* Adds space between the logo and text */
+  }
+  
+  .dev-logo {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Nabla", system-ui;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 999px;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
