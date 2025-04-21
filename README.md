@@ -3,13 +3,11 @@
   
 ---
 
-✅ I will create a personal bio using HTML, CSS, and JavaScript.
-The goal of this project is to strengthen the skills mentioned above through project-oriented learning.
-
+✅ have built this page for eductional purposes, to explore properties of HTML and CSS and to apply them practically
 </div>
 
 ---
 
 <div>
-I used chatgpt to learn tags , and use the some times.
+ chatgpt was used as a tool to explore tags,properties
 </div>
