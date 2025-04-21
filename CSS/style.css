@@ -292,7 +292,7 @@ border-radius: 20px;
     align-items: center;    
     padding-top: 5vh;
     text-align: center;   
-
+}
 .project-image {
     width: 200px; 
     height: 200px; 
@@ -475,4 +475,18 @@ body.dark-mode button.mode {
 
 button.mode:hover {
     background-color: #555;
+}
+
+.arrow
+{ 
+    width: 20px; 
+    height: 30px;
+    
+}
+.go-up
+{ 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
 }
