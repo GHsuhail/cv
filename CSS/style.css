@@ -102,3 +102,55 @@ ul, li, a{
 
 
 /* Bio Ends*/
+
+/* skills list */
+.skills{ 
+    margin-top : 100px;
+}
+.skills-title{ 
+    margin: auto;
+    text-align: center;
+
+}
+.skills-title p { 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+.skills-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-box{
+
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 800px; 
+    height: 500px;
+    border-radius: 7%;
+    background-color: #ECECEC;
+    
+}
+.skill{ 
+    width:  70px; 
+    height: 70px;
+    margin-top: 20px;
+    
+}
+.skill:nth-child(4n + 1) {
+    margin-left: 25px;
+}
+.dotnet{
+    width:50px; 
+    height:50px;
+}
+
+/* skills list */
+
+/* Projects list */
+
+/* Projects list */
