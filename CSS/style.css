@@ -11,6 +11,7 @@ html{
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     
@@ -24,6 +25,15 @@ html{
     border-color:lightgrey;
     margin-right: 30px;
     
+}
+@media (max-width: 768px){
+    .mode-btn{ 
+    background-color: White;
+    border-radius: 50%;
+    border-style:solid;
+    border-color:lightgrey;
+    margin : auto;
+    }
 }
 .mode-btn:hover{ 
     background-color: grey;
@@ -41,12 +51,28 @@ html{
     font-size: 25px;
     margin-left: 30px;
 }
+@media (max-width: 768px){
+    .logo span{ 
+        width: 100%;
+    }
+}
+
 .menu-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 63px;
     font-size: 25px;
+}
+@media (max-width: 768px){
+    
+    .menu-list{ 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 15px;
+    }
 }
 .menu-list li{ 
     position: relative;
@@ -99,7 +125,22 @@ ul, li, a{
     border-radius: 50%;
     margin-left: 100px;
 }
-
+@media (max-width: 768px){
+   #profile{ 
+    width:200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin: auto; 
+    }
+}
+@media (max-width: 768px)
+{ 
+    .bio .text p ,
+    .bio .text .user-name
+    { 
+        margin-left : 130px ;
+    }
+}
 
 /* Bio Ends*/
 
@@ -135,14 +176,41 @@ ul, li, a{
     background-color: #ECECEC;
     
 }
+@media (max-width: 768px)
+{ 
+    .skills-box{ 
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 600px; 
+    height: 400px;
+    border-radius: 7%;
+    background-color: #ECECEC;
+    }
+}
 .skill{ 
     width:  70px; 
     height: 70px;
     margin-top: 20px;
     
 }
+@media (max-width: 768px)
+{ 
+    .skill{
+    width:  50px; 
+    height: 50px;
+    margin-top: 20px;
+    }
+}
 .skill:nth-child(4n + 1) {
     margin-left: 25px;
+}
+@media (max-width: 768px)
+{
+    .skill:nth-child(4n + 1) {
+        margin-left:5px;
+    }
+
 }
 .dotnet{
     width:50px; 
@@ -172,7 +240,17 @@ ul, li, a{
     background-color: #ECECEC;
     border-radius: 7%;
 }
-/* Projects list */
+
+@media (max-width: 768px){ 
+    .box{ 
+        position: relative;
+        height:400px ;
+        width:350px; 
+        background-color: #ECECEC;
+        border-radius: 7%;
+        margin-bottom: 20px;
+    }
+}
 .box .project-logo
 {
     margin-top: 60px;
@@ -180,6 +258,21 @@ ul, li, a{
     width:200px; 
     height: 200px;
 }
+@media (max-width: 768px)
+{ 
+    .box .project-logo
+    {
+    margin-top: 20px;
+    margin-left:20%;
+    margin-bottom: 10px; 
+    width:200px; 
+    height: 200px;
+    }
+}
+
+/* Projects list */
+
+
 .box p {
     width: max-content;
     margin:0  auto;
@@ -224,12 +317,46 @@ ul, li, a{
     margin-right: 100px;
     
 }
+/* @media (max-width: 768px)
+{
+    .language{ 
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ECECEC;
+        
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 40px;
+        
+    }
+    
+} */
 .language-name p { 
     font-weight: bold;
     font-size: 18px;
 }
 .proficiency p{ 
 
+}
+
+@media (max-width: 768px) {
+    .language { 
+        
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .language-name, .proficiency {
+        width: 100%; 
+    }
+
+    .proficiency {
+        margin-top: 10px; 
+        margin-left: 20px;
+    }
 }
 
 /* Languages */
@@ -261,6 +388,26 @@ ul, li, a{
     border-radius: 999px;
     background-color: #ECECEC;
     margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+    .social-media-container{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 6px 16px;
+        margin : auto; 
+        width: 200px; 
+        height: 50px;
+        border-radius: 999px;
+        background-color: #ECECEC;
+        margin-bottom: 70px;
+}
+.platform{ 
+    width: 20px; 
+    height: 20px;
+}
+
 }
 .platform{ 
     width: 40px; 
@@ -319,3 +466,46 @@ ul, li, a{
 
     font-family:"Nabla", system-ui ;
 }
+
+/* Dark Mode classes */
+body.dark { 
+    background-color: #121212;
+}
+
+body.dark .header .logo span,
+body.dark .menu .menu-list li ,
+body.dark .bio .container .text,
+body.dark .skills-title p,
+body.dark .projects-title p ,
+body.dark .box p,
+body.dark .languages-title p, 
+body.dark .language .language-name p ,
+body.dark .language .proficiency p , 
+body.dark .social-media-title p 
+{ 
+    color: #e0e0e0;
+}
+body.dark a{ 
+    color: #90caf9; 
+
+}
+body.dark a:hover { 
+ color:#bbdefb;
+    
+}
+body.dark .skills .skills-box , 
+body.dark .projects .box , 
+body.dark .social-media .social-media-container{ 
+    background-color: darkgrey; 
+}
+body, .header, .menu, .bio, .skills-title, .projects-title, .box, .language, .social-media-title {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Dark Mode classes */
+
+
+/* responsive  */
+
+/* responsive  */
