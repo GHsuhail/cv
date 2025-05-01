@@ -11,7 +11,7 @@ html{
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 
@@ -152,5 +152,170 @@ ul, li, a{
 /* skills list */
 
 /* Projects list */
+.projects{
+    margin-top: 100px;
+}
+.projects-title{ 
+    margin: auto; 
+    text-align: center;
+}
+.projects-title p{ 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
+.box{ 
+    position: relative;
+    height:500px ;
+    width:350px; 
+    background-color: #ECECEC;
+    border-radius: 7%;
+}
 /* Projects list */
+.box .project-logo
+{
+    margin-top: 60px;
+    margin-left:20%; 
+    width:200px; 
+    height: 200px;
+}
+.box p {
+    width: max-content;
+    margin:0  auto;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.container .box button{ 
+    position: absolute;
+    left: 42%;
+    border-radius: 40%;
+     transition: 0.5s ease;
+    
+}
+.container .box button:hover{
+    background-color: lightgrey;
+}
+/* Projects list */
+
+/* Languages */
+.languages{ 
+    margin-top: 100px;
+}
+.languages-title{ 
+    text-align: center;
+    margin:auto; 
+}
+.languages-title p { 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.lang-container{ 
+
+}
+.language{ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+    padding : 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.language-name p { 
+    font-weight: bold;
+    font-size: 18px;
+}
+.proficiency p{ 
+
+}
+
+/* Languages */
+
+
+
+/* social Media */
+.social-media{ 
+    margin-top: 100px;
+}
+.social-media-title{ 
+    margin: auto; 
+    text-align: center;
+}
+.social-media-title p { 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.social-media-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 16px;
+    margin : auto; 
+    width: 350px; 
+    height: 70px;
+    border-radius: 999px;
+    background-color: #ECECEC;
+    margin-bottom: 70px;
+}
+.platform{ 
+    width: 40px; 
+    height: 40px;
+}
+
+/* social Media */
+
+.go-up-btn{
+    width: 30px;
+    height: 40px;
+    position: fixed;
+    bottom:60px ;
+    right : 25px;
+    z-index: 109;
+    background-color: white;
+    border-radius: 999px;
+    transition: 0.5s ease;
+}
+.go-up-btn:hover{
+    background-color: #ECECEC;
+}
+
+/* footer */
+
+.dev-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    padding:  10px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+  
+  .dev-card {
+    display: flex;
+    align-items: center;     
+    gap: 10px; 
+    transform: left 0.5s ease;               
+}
+  
+.dev-logo {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Nabla", system-ui;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 999px;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dev-card:hover{ 
+
+    font-family:"Nabla", system-ui ;
+}
